@@ -9,7 +9,7 @@ export const App = () => {
 
   const visibleMovies = moviesFromServer.filter(
     good =>
-      good.title.toLowerCase().includes(normalizedQuery) &&
+      good.title.toLowerCase().includes(normalizedQuery) ||
       good.description.toLowerCase().includes(normalizedQuery),
   );
 
